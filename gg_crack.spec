@@ -1,5 +1,5 @@
-Summary:	GG Crack - password cracking tool
-Summary(pl):	GG Crack - narzêdzie do ³amania hase³
+Summary:	GG Crack - Gadu-Gadu password cracking tool
+Summary(pl):	GG Crack - narzêdzie do ³amania hase³ Gadu-Gadu
 Name:		gg_crack
 Version:	1
 Release:	1
@@ -7,7 +7,7 @@ License:	???
 Group:		Tool
 Source0:	http://packetstorm.linuxsecurity.com/crypt/%{name}.c
 # Source0-md5:	65e491064e613406abdafdebb495ef85
-URL:		http://packetstorm.linuxsecurity.com
+URL:		http://packetstorm.linuxsecurity.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
