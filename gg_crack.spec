@@ -16,19 +16,21 @@ GG Crack - Gadu-Gadu password cracking tool.
 %description -l pl
 GG crack - narzêdzie do ³amania hase³ komunikatora Gadu-Gadu.
 
+%prep
+%setup -q -T -c
+cp %{SOURCE0} .
+
 %build
-rm -rf $RPM_BUILD_ROOT
-
-mkdir $RPM_BUILD_ROOT
-
-cp %{SOURCE0} $RPM_BUILD_ROOT
-
-cd $RPM_BUILD_ROOT
-
-gcc -Wall $RPM_BUILD_ROOT/%{name}.c -o $RPM_BUILD_ROOT/%{name}
+%{__make} %{name} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
-install -D $RPM_BUILD_ROOT/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_bindir}
+
+install %{name} $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
