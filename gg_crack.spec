@@ -1,5 +1,5 @@
 Summary:	GG Crack - Gadu-Gadu password cracking tool
-Summary(pl):	GG Crack - narzêdzie do ³amania hase³ Gadu-Gadu
+Summary(pl.UTF-8):   GG Crack - narzÄ™dzie do Å‚amania haseÅ‚ Gadu-Gadu
 Name:		gg_crack
 Version:	1
 Release:	1
@@ -13,8 +13,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GG Crack - Gadu-Gadu password cracking tool.
 
-%description -l pl
-GG crack - narzêdzie do ³amania hase³ komunikatora Gadu-Gadu.
+%description -l pl.UTF-8
+GG crack - narzÄ™dzie do Å‚amania haseÅ‚ komunikatora Gadu-Gadu.
 
 %prep
 %setup -q -T -c
