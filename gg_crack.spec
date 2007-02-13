@@ -1,5 +1,5 @@
 Summary:	GG Crack - Gadu-Gadu password cracking tool
-Summary(pl.UTF-8):   GG Crack - narzędzie do łamania haseł Gadu-Gadu
+Summary(pl.UTF-8):	GG Crack - narzędzie do łamania haseł Gadu-Gadu
 Name:		gg_crack
 Version:	1
 Release:	1
